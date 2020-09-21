@@ -1,0 +1,78 @@
+<head>
+	<meta charset=utf-8>
+	<title><%= page_title %></title>
+	<meta name="keywords" content="<%= keywords %>" />
+	<meta name="description" content="<%= description %>" />
+	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@twitter">
+	<meta name="twitter:image" content="<%= site_url %>/<%= ogpDir %><%= ogp_tw %>">
+	<meta property="og:description" content="<%= description %>">
+	<meta property="og:title" content="<%= page_title %>">
+	<meta property="og:url" content="<%= page_url %>">
+	<meta property="og:image" content="<%= site_url %>/<%= ogpDir %><%= ogp_fb %>">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="<%= site_title %>">
+	<!-- <meta name="msapplication-square70x70logo" content="<%= site_url %>/assets/img/favicons/site-tile-70x70.png">
+	<meta name="msapplication-square150x150logo" content="<%= site_url %>/assets/img/favicons/site-tile-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="<%= site_url %>/assets/img/favicons/site-tile-310x150.png">
+	<meta name="msapplication-square310x310logo" content="<%= site_url %>/assets/img/favicons/site-tile-310x310.png">
+	<meta name="msapplication-TileColor" content="#0078d7">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<%= site_url %>/assets/img/favicons/favicon.ico">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="<%= site_url %>/assets/img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="<%= site_url %>/assets/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="<%= site_url %>/assets/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<%= site_url %>/assets/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<%= site_url %>/assets/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114"
+		href="<%= site_url %>/assets/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120"
+		href="<%= site_url %>/assets/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144"
+		href="<%= site_url %>/assets/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152"
+		href="<%= site_url %>/assets/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="<%= site_url %>/assets/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="36x36" href="<%= site_url %>/assets/img/favicons/android-chrome-36x36.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="<%= site_url %>/assets/img/favicons/android-chrome-48x48.png">
+	<link rel="icon" type="image/png" sizes="72x72" href="<%= site_url %>/assets/img/favicons/android-chrome-72x72.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<%= site_url %>/assets/img/favicons/android-chrome-96x96.png">
+	<link rel="icon" type="image/png" sizes="128x128"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-128x128.png">
+	<link rel="icon" type="image/png" sizes="144x144"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-144x144.png">
+	<link rel="icon" type="image/png" sizes="152x152"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-152x152.png">
+	<link rel="icon" type="image/png" sizes="192x192"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="256x256"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="384x384"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-384x384.png">
+	<link rel="icon" type="image/png" sizes="512x512"
+		href="<%= site_url %>/assets/img/favicons/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="36x36" href="<%= site_url %>/assets/img/favicons/icon-36x36.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="<%= site_url %>/assets/img/favicons/icon-48x48.png">
+	<link rel="icon" type="image/png" sizes="72x72" href="<%= site_url %>/assets/img/favicons/icon-72x72.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<%= site_url %>/assets/img/favicons/icon-96x96.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="<%= site_url %>/assets/img/favicons/icon-128x128.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="<%= site_url %>/assets/img/favicons/icon-144x144.png">
+	<link rel="icon" type="image/png" sizes="152x152" href="<%= site_url %>/assets/img/favicons/icon-152x152.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="<%= site_url %>/assets/img/favicons/icon-160x160.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="<%= site_url %>/assets/img/favicons/icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="<%= site_url %>/assets/img/favicons/icon-196x196.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="<%= site_url %>/assets/img/favicons/icon-256x256.png">
+	<link rel="icon" type="image/png" sizes="384x384" href="<%= site_url %>/assets/img/favicons/icon-384x384.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="<%= site_url %>/assets/img/favicons/icon-512x512.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<%= site_url %>/assets/img/favicons/icon-16x16.png">
+	<link rel="icon" type="image/png" sizes="24x24" href="<%= site_url %>/assets/img/favicons/icon-24x24.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<%= site_url %>/assets/img/favicons/icon-32x32.png">
+	<link rel="manifest" href="<%= site_url %>/assets/img/favicons/manifest.json"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="<%= distPath %>assets/lib/slick/slick.css" />
+	<link rel="stylesheet" href="<%= distPath %>assets/css/style.css" type="text/css" media="screen,print">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet">
+</head>

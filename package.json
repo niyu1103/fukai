@@ -1,0 +1,38 @@
+{
+	"name": "fukai",
+	"version": "1.0.0",
+	"description": "fukai",
+	"scripts": {
+		"all": "npm run watch-ejs & npm run format & npm run watch-css & npm run clean & npm run copy & npm run start",
+		"ejs": "mkdir -p dist && ejs-cli --base-dir dev/ejs/page /**/**.ejs --out dist/",
+		"format": "onchange './dist/**/*.html' -- prettier --config ./.prettierrc --write {{changed}}",
+		"watch-ejs": "nodemon -e ejs -x \"npm run ejs \"",
+		"build-css": "node-sass --include-path scss ./dev/src/scss/style.scss ./dist/assets/css/style.css --output-style expanded --importer ./node_modules/node-sass-import ",
+		"watch-css": "nodemon -e scss -x \"npm run build-css \"",
+		"watch-copy": "nodemon -e copy -x \"npm run copy \"",
+		"clean": "rimraf ./dist",
+		"copy": "rm -rf dist;mkdir dist;cpx 'dev/src/**/*.!(scss|md)' dist/assets; ls -lR dist",
+		"start": "browser-sync start --server ./dist/ --port 3535 --files *"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.1.5",
+		"browser-sync": "^2.24.7",
+		"cpx": "^1.5.0",
+		"css-mqpacker": "^7.0.0",
+		"ejs-cli": "^2.0.1",
+		"minimatch": "^3.0.4",
+		"node-sass": "^4.12.0",
+		"node-sass-import": "^2.0.1",
+		"nodemon": "^1.18.9",
+		"onchange": "^6.0.0",
+		"prettier": "^1.18.2",
+		"rimraf": "^3.0.0",
+		"npx": "^10.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@bitbucket.org:asiodw/yamaho.git"
+	}
+}

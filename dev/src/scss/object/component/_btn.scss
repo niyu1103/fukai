@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* ===========================================
+	btn
+=========================================== */
+.c-btn {
+	background-color: $color-white;
+	border: solid 1px $site-color02;
+	box-shadow: 4px 4px $site-color03;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	transition: .3s;
+
+	&::after {
+		background: url(../img/common/ico_arrow_btn.svg) no-repeat;
+		background-size: contain;
+		content: "";
+		display: inline-block;
+		height: 10px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 6px;
+	}
+
+	&:hover {
+		background-color: $site-color03;
+		border: none;
+		box-shadow: none;
+		color: $color-white;
+
+		&::after {
+			background: url(../img/common/ico_arrow_btn-w.svg) no-repeat;
+			background-size: contain;
+		}
+	}
+
+
+	&__re {
+		border: 1px solid $color-white;
+		color: $color-white;
+		display: block;
+		@include pc {
+			transition: .3s;
+
+			&:hover {
+				background-color: $color-white;
+				border: 1px solid $site-color03;
+				box-shadow: 4px 4px $site-color03;
+				color: $site-color01;
+
+				&::after {
+					background: url(../img/common/ico_arrow_btn.svg) no-repeat;
+				}
+			}
+		}
+		line-height: 50px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+
+		&::after {
+			background: url(../img/common/ico_arrow_btn-w.svg) no-repeat;
+			content: "";
+			display: inline-block;
+			height: 10px;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 6px;
+		}
+	}
+}

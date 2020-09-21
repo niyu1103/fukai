@@ -1,0 +1,33 @@
+<header id="header" class="l-header">
+	<div class="l-header__inner">
+
+		<% if (page_id === "home"){ %>
+		<h1 class="p-logo"><img class="p-logo__img" src="<%= distPath %>assets/img/common/logo.svg" alt="深井醤油"></h1>
+		<% } else { %>
+		<div class="p-logo"><a class="p-logo__link" href="<%= distPath %>"><img class="p-logo__img"
+					src="<%= distPath %>assets/img/common/logo.svg" alt="深井醤油"></a></div>
+		<% } %>
+
+		<nav class="p-gnav">
+			<ul class="p-gnav__list">
+				<li class="p-gnav__item"><a class="p-gnav__link" href="<%= distPath %>about">深井醤油について</a></li>
+				<li class="p-gnav__item p-gnav__mega"><a class="p-gnav__link" href="javascript:void(0)">商品のご紹介</a>
+					<ul class="p-gnav-sub">
+						<li class="p-gnav-sub__item"><a class="p-gnav-sub__link"
+								href="<%= distPath %>products-single">単品商品</a></li>
+						<li class="p-gnav-sub__item"><a class="p-gnav-sub__link"
+								href="<%= distPath %>products-set">セット商品</a></li>
+					</ul>
+				</li>
+				<li class="p-gnav__item"><a class="p-gnav__link" href="<%= distPath %>information">店舗情報</a></li>
+				<li class="p-gnav__item"><a class="p-gnav__link" href="<%= distPath %>recipe">レシピ</a></li>
+				<li class="p-gnav__item"><a class="p-gnav__link" href="<%= distPath %>news">お知らせ</a></li>
+				<li class="p-gnav__item p-gnav__onlineshop"><a class="p-gnav__link"
+						href="<%= distPath %>products-single">オンラインショップ</a>
+				</li>
+				<li class="p-gnav__item p-gnav__facebook"><a class="p-gnav__link" href="<%= distPath %>"><i
+							class="fab fa-facebook-square"></i></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>

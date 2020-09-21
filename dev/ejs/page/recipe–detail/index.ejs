@@ -1,0 +1,193 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'recipe–detail';
+	page_title = 'recipe detail | ' + site_title;
+  page_url = site_url + '/recipe–detail/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-recipe">
+
+			<section>
+				<div class="l-wapper">
+					<div class="l-contents">
+						<%- include('../../module/_hd-01-02',{
+                hd_EN_txt : 'TAMARI ZUKE',
+                hd_txt : '',
+                hd_txt_sub : ''
+              }); %>
+						<div class="p-recipe__main">
+							<div class="p-recipe__img-box">
+								<img class="p-recipe__img" src="<%= distPath %>assets/img/recipe/recipe.png" alt="">
+							</div>
+							<div class="p-recipe__txt-box">
+								<h2 class="p-recipe__tit">サラダ風しょうゆ漬け</h2>
+								<div class="p-recipe__txt-sub-tit">【材料】</div>
+								<p class="p-recipe__txt">
+									ああああ10g / ああああ10g / ああああ10g / ああああ10g / ああああ10g / ああああ10g / ああああ10g / ああああ10g /
+									ああああ10g / ああああ10g / ああああ10g /ああああ10g / ああああ10g / ああああ10g /
+								</p>
+								<div class="p-recipe__txt-sub-tit">【調理時間目安】</div>
+								<p class="p-recipe__txt">10分</p>
+							</div>
+						</div>
+
+						<div class="c-step__block">
+							<h3 class="c-step__tit-box"><span class="c-step__tit">あっさり、でもコクのある野菜は子どももパクパク食べます。</span>
+							</h3>
+							<ul class="c-step__list">
+								<li class="c-step__item">
+									<span class="c-step__num">Step1</span>
+									<span class="c-step__txt">野菜を切って、塩をまぶして、少し置く。水が出てきたら、水をしぼってだし醤油に漬ける。</span>
+								</li>
+								<li class="c-step__item">
+									<span class="c-step__num">Step2</span>
+									<span class="c-step__txt">お好みにより、丸大豆醤油を加えても美味しく食べられます。</span>
+								</li>
+							</ul>
+							<div class="c-step__caution">
+								<span
+									class="c-step__caution--txt">注意事項：テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</span>
+							</div>
+						</div>
+
+						<div class="l-wapper-s">
+
+							<div class="p-recipe__block">
+								<%- include('../../module/_hd-02-02',{
+              	hd_txt : '「たまり漬け」を使った<br>他のレシピ'
+            }); %>
+								<ul class="p-card-square__block">
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">ヤマホ醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">卵焼き</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">5min</span>
+														<span class="c-cat">だし醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">たまり漬け</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="p-recipe__block">
+								<%- include('../../module/_hd-02-02',{
+              	hd_txt : '他の人気商品を使った<br>レシピ'
+            }); %>
+								<ul class="p-card-square__block">
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">ヤマホ醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">卵焼き</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">5min</span>
+														<span class="c-cat">だし醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">たまり漬け</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>recipe">おすすめレシピ</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>recipe–detail">レシピ詳細</a></li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

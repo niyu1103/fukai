@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ===========================================
+  use
+=========================================== */
+
+@include pc {
+	.u-use-sp {
+		display: none;
+	}
+}
+
+@include sp {
+	.u-use-pc {
+		display: none;
+	}
+}

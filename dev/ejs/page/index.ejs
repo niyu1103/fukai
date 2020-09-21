@@ -1,0 +1,370 @@
+<% include ../common/_variable %>
+<%
+	page_id = 'home';
+	page_title = site_title;
+	page_url = site_url;
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../common/_head %>
+
+	<body class="<%= page_id %>">
+		<div class="p-mainvisual">
+			<div class="js-silde">
+				<div><img class="c-hd__num c-hd__num--001" src="<%= distPath %>assets/img/top/mv_top_01.jpg" alt="深井醤油">
+				</div>
+				<div><img class="c-hd__num c-hd__num--001" src="<%= distPath %>assets/img/top/mv_top_02.jpg" alt="深井醤油">
+				</div>
+				<div><img class="c-hd__num c-hd__num--001" src="<%= distPath %>assets/img/top/mv_top_03.jpg" alt="深井醤油">
+				</div>
+			</div>
+			<h2 class="p-mainvisual--top">安政３年創業<br>これからも、所沢と。</h2>
+			<div class="c-scroll">scroll</div>
+		</div>
+		<% include ../common/_header %>
+
+		<main>
+			<div class="p-hero">
+				<h2 class="c-hd__home-hero">変わること 変わらないこと。</h2>
+				<p class="c-txt__center--white">
+					安政3年の創業以来、時代を超えて所沢の食文化に深く関わってきました。<br>所沢の街並が大きく変わっていく中で、<br>深井醤油の周りだけが、江戸の名残と雰囲気を残しています。</p>
+				<p class="c-txt__center--white">現
+					五代目社長を先頭に、<br>伝統の味、繊細な感覚を生かした職人技など昔ながらの良さを受け継ぎながらも<br>新しい味、モノ作りにチャレンジしている醤油屋です。
+				</p>
+				<p class="c-txt__center--white">変わっていくこと 変わらずにいること。<br>わたしたちは、そのどちらも大切にしています。</p>
+				<div class="p-hero__btn"><a class="c-btn__re" href="<%= distPath %>about">深井醤油についてもっと知る</a></div>
+			</div>
+			<section>
+				<div class="l-contents">
+					<div class="l-wapper p-top__news">
+						<%- include('../module/_hd-02',{
+						  hd_class:'',
+							hd_txt : 'お知らせ',
+							hd_EN_txt : 'news'
+						}); %>
+						<ul class="p-card__home--news">
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">SHOP</span><span
+											class="p-card__date">2019.12.20</span></div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news01.jpg" alt=""></div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">EVENT</span><span
+											class="p-card__date">2019.12.20</span>
+									</div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news02.jpg" alt="">
+									</div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">MEDIA</span><span
+											class="p-card__date">2019.12.20</span>
+									</div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news03.jpg" alt="">
+									</div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">SHOP</span><span
+											class="p-card__date">2019.12.20</span>
+									</div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news01.jpg" alt="">
+									</div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">EVENT</span><span
+											class="p-card__date">2019.12.20</span>
+									</div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news02.jpg" alt="">
+									</div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+							<li class="p-card__list">
+								<a href="<%= distPath %>news–details">
+									<div class="p-card__sub"><span class="c-cat">MEDIA</span><span
+											class="p-card__date">2019.12.20</span>
+									</div>
+									<div class="p-card__img--wrap"><img class="p-card__img"
+											src="<%= distPath %>assets/img/top/news03.jpg" alt="">
+									</div>
+									<div class="p-card__txt">
+										新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗オープンしました。新店舗新店舗オープンしました。
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div>
+							<a class="c-btn" href="<%= distPath %>news">もっと見る</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="p-top__products">
+					<div class="p-top__products-hd">
+						<div class="c-hd__img">
+							<%- include('../module/_hd-02',{
+						  hd_class:'p--re',
+							hd_txt : '商品のご案内',
+							hd_EN_txt : 'products'
+						}); %>
+						</div>
+					</div>
+					<div class="l-contents">
+						<div class="l-wapper">
+							<ul class="p-top__products-list">
+
+								<li class="p-top__products-item">
+									<%- include('../module/_hd-03',{
+										hd_EN_txt : ' YAMAHOSHOYU',
+										hd_round_txt : 'ヤ',
+										hd_txt : 'マホ醤油'
+									}); %>
+									<div class="p-top__products-column">
+										<div class="p-top__products-txt-box">
+											<p class="p-top__products-txt">
+												創業以来の製法と伝統を守りつつ<br>新しい技術を取り入れ、<br>安政三年からの味と風味を守り続けてきた、<br>老舗ならではの味です。
+											</p>
+											<a class="c-btn" href="<%= distPath %>products-single/#mayaho">もっと見る</a>
+										</div>
+										<img class="p-top__products-img"
+											src="<%= distPath %>assets/img/top/kuradashi.jpg" alt="">
+									</div>
+								</li>
+
+								<li class="p-top__products-item u-re">
+									<%- include('../module/_hd-03',{
+										hd_EN_txt : ' DASHISHOYU',
+										hd_round_txt : 'だ',
+										hd_txt : 'し醤油'
+									}); %>
+									<div class="p-top__products-column u-re">
+										<div class="p-top__products-txt-box">
+											<p class="p-top__products-txt">
+												かつお節、北海道利尻産の一等昆布の<br>旨みを絞り出し、ヤマホ醤油と調和させた<br>おいしいだし醤油です。</p>
+											<a class="c-btn" href="<%= distPath %>products-single/#dashi">もっと見る</a>
+										</div>
+										<img class="p-top__products-img"
+											src="<%= distPath %>assets/img/top/kastuodashi.jpg" alt="">
+									</div>
+								</li>
+
+								<li class="p-top__products-item">
+									<%- include('../module/_hd-03',{
+										hd_EN_txt : ' TAMARIZUKE',
+										hd_round_txt : 'た',
+										hd_txt : 'まり漬け'
+									}); %>
+									<div class="p-top__products-column">
+										<div class="p-top__products-txt-box">
+											<p class="p-top__products-txt">
+												野菜を、ヤマホ醤油でじっくりと時間をかけて<br>漬け込みました。野菜とヤマホ醤油の旨味とが<br>しっかりとからみ合った、<br>醤油屋でしか出せない味です。
+											</p>
+											<a class="c-btn" href="<%= distPath %>products-single/#tamari">もっと見る</a>
+										</div>
+										<img class="p-top__products-img"
+											src="<%= distPath %>assets/img/top/kuradashi.jpg" alt="">
+									</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="p-top__recipes">
+					<div class="p-top__recipes-hd">
+						<div class="c-hd__img">
+							<%- include('../module/_hd-02',{
+						  hd_class:'p--re',
+							hd_txt : 'おすすめレシピ',
+							hd_EN_txt : 'recipes'
+						}); %>
+						</div>
+					</div>
+
+					<div class="l-contents">
+						<div class="l-wapper">
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<a class="c-btn" href="<%= distPath %>recipe">もっと見る</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="p-top__info">
+					<div class="p-top__info-hd">
+						<div class="c-hd__img">
+							<%- include('../module/_hd-02',{
+						  hd_class:'p--re',
+							hd_txt : '店舗情報',
+							hd_EN_txt : 'shop info'
+						}); %>
+						</div>
+					</div>
+
+
+					<div class="l-wapper">
+						<div class="l-contents">
+							<ul class="p-card-shop__block">
+								<li class="p-card-shop__box">
+									<img class="p-card-shop__img" src="<%= distPath %>assets/img/top/shop.jpg" alt="">
+									<div class="p-card-shop__txt">
+										<span class="c-cat">直営店</span>
+										<dl>
+											<dt class="p-card-shop__tit">所沢本店</dt>
+											<dd class="p-card-shop__info">
+												<span class="p-card-shop__add">埼玉県所沢市有楽町7-5</span>
+												<span class="p-card-shop__tel">0120-46-2015</span>
+											</dd>
+										</dl>
+										<a class="c-btn" href="<%= distPath %>information">詳細</a>
+									</div>
+								</li>
+								<li class="p-card-shop__box">
+									<img class="p-card-shop__img" src="<%= distPath %>assets/img/top/shop.jpg" alt="">
+									<div class="p-card-shop__txt">
+										<span class="c-cat">直営店</span>
+										<dl>
+											<dt class="p-card-shop__tit">所沢本店</dt>
+											<dd class="p-card-shop__info">
+												<span class="p-card-shop__add">埼玉県所沢市有楽町7-5</span>
+												<span class="p-card-shop__tel">0120-46-2015</span>
+											</dd>
+										</dl>
+										<a class="c-btn" href="<%= distPath %>information">詳細</a>
+									</div>
+								</li>
+								<li class="p-card-shop__box">
+									<img class="p-card-shop__img" src="<%= distPath %>assets/img/top/shop.jpg" alt="">
+									<div class="p-card-shop__txt">
+										<span class="c-cat">直営店</span>
+										<dl>
+											<dt class="p-card-shop__tit">所沢本店</dt>
+											<dd class="p-card-shop__info">
+												<span class="p-card-shop__add">埼玉県所沢市有楽町7-5</span>
+												<span class="p-card-shop__tel">0120-46-2015</span>
+											</dd>
+										</dl>
+										<a class="c-btn" href="<%= distPath %>information">詳細</a>
+									</div>
+								</li>
+								<li class="p-card-shop__box">
+									<img class="p-card-shop__img" src="<%= distPath %>assets/img/top/shop.jpg" alt="">
+									<div class="p-card-shop__txt">
+										<span class="c-cat">直営店</span>
+										<dl>
+											<dt class="p-card-shop__tit">所沢本店</dt>
+											<dd class="p-card-shop__info">
+												<span class="p-card-shop__add">埼玉県所沢市有楽町7-5</span>
+												<span class="p-card-shop__tel">0120-46-2015</span>
+											</dd>
+										</dl>
+										<a class="c-btn" href="<%= distPath %>information">詳細</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="p-top__story-hd">
+							<h3 class="p-top__story__tit">深井醤油6代目が語る、深井醤油の深い話</h3>
+							<div class="p-top__story__btn"><a class="c-btn__re" href="<%= distPath %>story">深い話を読む</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list home"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../common/_footer %>
+		<% include ../common/_js %>
+	</body>
+
+</html>

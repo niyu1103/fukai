@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* ===========================================
+  recipe
+=========================================== */
+.p-recipe {
+	&__hero {
+		background: url(../img/recipe/mv_recipe.png) no-repeat;
+		background-size: cover;
+	}
+
+	& .p-card-square__block {
+		margin-top: 80px;
+	}
+
+	& .c-hd__01-02 {
+		z-index: 5;
+	}
+
+	&__main {
+		@include column();
+		margin-top: -45px;
+	}
+
+	&__img {
+		width: 100%;
+
+		&-box {
+			overflow: hidden;
+			width: 44.94%;
+		}
+	}
+
+	&__txt {
+		font-size: 1.6rem;
+		margin-top: 10px;
+
+		&-box {
+			margin-top: 45px;
+			width: 44.04%;
+		}
+
+		&-sub-tit {
+			margin-top: 60px;
+		}
+	}
+
+	&__tit {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	&__block {
+		margin-top: 160px;
+
+		&:nth-child(n+2) {
+			margin-top: 125px;
+		}
+	}
+}

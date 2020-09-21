@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* ===========================================
+  company
+=========================================== */
+.p-company {
+	&__hero {
+		background: url(../img/company/mv_company.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&__nav {
+		margin-bottom: 70px;
+		position: relative;
+		width: 100%;
+
+		&::after {
+			background-color: $site-color06;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: -1;
+		}
+
+		&--list {
+			@include column($a: flex-start);
+		}
+
+		&--item {
+			margin-left: 7px;
+
+
+			&:nth-child(n+2) {
+				margin-left: 35px;
+			}
+
+			&.is-current {
+				border-bottom: 4px solid $site-color05;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	&__tab {
+		display: none;
+		transition: all .6s ease-out;
+
+
+		&.is-active {
+			display: block;
+			transition: all .6s ease-out;
+		}
+	}
+
+	&__overview {
+		width: 100%;
+	}
+
+	&--block {
+		margin-top: 100px;
+	}
+
+	&__item {
+		background-color: $site-color04;
+		font-size: 1.6rem;
+		line-height: 37px;
+		margin-top: 20px;
+	}
+
+	&__column {
+		@include column($a: flex-start);
+	}
+
+	&__item--tit {
+		text-align: right;
+		width: 34.26%;
+	}
+
+	&__item--txt {
+		padding-left: 10.11%;
+	}
+
+	&__history {
+		width: 100%;
+
+		& .p-company {
+			&__item--tit {
+				width: 28.08%;
+			}
+
+			&__item--txt {
+				padding-left: 7.86%;
+			}
+		}
+	}
+
+	&__tit {
+		font-size: 2rem;
+		font-weight: 500;
+		margin-bottom: 70px;
+	}
+
+	&__txt {
+		font-size: 1.6rem;
+		line-height: 2;
+
+		&:nth-child(n+2) {
+			margin-top: 40px;
+		}
+	}
+
+	&__img {
+		margin-top: 125px;
+		width: 100%;
+	}
+
+	&__message {
+		width: 100%;
+	}
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* ===========================================
+	footer
+=========================================== */
+.l-footer {
+	background: url(../img/common/footer.png) no-repeat;
+	background-size: contain;
+	margin-top: 20px;
+	padding-top: 21.87%;
+	position: relative;
+
+	&__inner {
+		background: $site-color01;
+		@include column();
+		padding: 45px 0 25px;
+	}
+}

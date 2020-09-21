@@ -1,0 +1,341 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'products-single';
+	page_title = 'products single item | ' + site_title;
+  page_url = site_url + '/products-single/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-products p-recipe">
+			<section>
+				<div class="p-mainvisual">
+					<div class="p-recipe__hero">
+						<div class="c-hd__img">
+							<%- include('../../module/_hd-01',{
+							hd_txt : 'おすすめレシピ',
+							hd_EN_txt : 'recipes'
+						}); %>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="l-contents">
+					<div class="l-wapper">
+						<%- include('../../module/_hd-02-02',{
+              	hd_txt : '製品から探すレシピ'
+            }); %>
+						<div class="p-products__nav">
+							<ul class="p-products__nav-list">
+								<li class="p-products__nav-item"><a class="c-btn" href="#yamaho">ヤマホ醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#tamari">たまり漬け</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#dashi">だし醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#yakisoba">焼きそば醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#yakiniku">焼肉のたれ</a></li>
+							</ul>
+						</div>
+
+						<div id="yamaho" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'YAMAHO SHOYU',
+                hd_round_txt : 'ヤ',
+                hd_txt : 'マホ醤油'
+              }); %>
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="tamari" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'TAMARI ZUKE',
+                hd_round_txt : 'た',
+                hd_txt : 'まり漬け'
+              }); %>
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="dashi" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'DASHI SHOYU',
+                hd_round_txt : 'だ',
+                hd_txt : 'し醤油'
+              }); %>
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="yakisoba" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'YAKISOBA SHOYU',
+                hd_round_txt : 'や',
+                hd_txt : 'きそば醤油'
+              }); %>
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="yakiniku" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'YAKINIKU-SAUCE',
+                hd_round_txt : '焼',
+                hd_txt : '肉のたれ'
+              }); %>
+							<ul class="p-card-square__block">
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">ヤマホ醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">卵焼き</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">5min</span>
+													<span class="c-cat">だし醤油</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+								<li class="p-card-square__list">
+									<a class="p-card-square__link" href="<%= distPath %>">
+										<img class="p-card-square__img"
+											src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+										<div>
+											<dl>
+												<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+												<dd class="p-card-square__info">
+													<span class="p-card-square__time">15min</span>
+													<span class="c-cat">たまり漬け</span>
+												</dd>
+											</dl>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>recipe">おすすめレシピ</a></li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

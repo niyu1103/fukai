@@ -1,0 +1,132 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'flow';
+	page_title = 'flow | ' + site_title;
+  page_url = site_url + '/flow/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-flow">
+
+			<section>
+				<div class="p-mainvisual">
+					<div class="p-flow__hero">
+						<div class="c-hd__img">
+							<%- include('../../module/_hd-01',{
+							hd_txt : 'ご購入の流れ・注意点',
+							hd_EN_txt : 'How to order'
+						}); %>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="l-wapper">
+					<div class="l-contents">
+
+						<%- include('../../module/_hd-02-02',{
+              	hd_txt : '深井醤油Webサイト オンラインショップでのご購入'
+            }); %>
+
+						<div class="c-step__block">
+
+							<ul class="c-step__list">
+								<li class="c-step__item">
+									<span class="c-step__num">Step1</span>
+									<span class="c-step__txt">ショッピングカートから商品を選び、カートに入れてください。</span>
+								</li>
+								<li class="c-step__item">
+									<span class="c-step__num">Step2</span>
+									<span class="c-step__txt">お名前、ご住所、メールアドレス、お電話番号、お支払い方法等必要な項目をご入力
+										いただき、「確定」ボタンを押すと注文が確定します。</span>
+								</li>
+								<li class="c-step__item">
+									<span class="c-step__num">Step3</span>
+									<span class="c-step__txt">折り返し担当の者からメールにてご連絡を差し上げます。
+										決済はそちらから行っていただきます。</span>
+								</li>
+								<li class="c-step__item">
+									<span class="c-step__num">Step4</span>
+									<span class="c-step__txt">ご入金から3〜5営業日程度で発送いたします。</span>
+								</li>
+							</ul>
+
+							<img class="p-flow__map" src="<%= distPath %>assets/img/flow/map.jpg" alt="">
+
+						</div>
+
+						<div class="p-flow__block">
+
+							<%- include('../../module/_hd-02-02',{
+              	hd_txt : 'お電話でのご購入'
+            }); %>
+
+							<p class="p-flow__txt--big">TEL:0120-46-2015</p>
+							<p class="p-flow__txt">受付時間　10時〜19時（留守電の場合はメッセージでご注文も承りますので、内容と折り返しの
+								ご連絡先をお残しください）</p>
+
+						</div>
+
+						<div class="p-flow__block">
+
+							<%- include('../../module/_hd-02-02',{
+              	hd_txt : 'お支払方法'
+            }); %>
+
+							<p class="p-flow__txt">下記のいずれかよりお選びくださいませ。</p>
+							<p class="p-flow__txt">ヤマト運輸：代金引換サービスをご利用になれます。ご注文の際にお申し出ください。<br>
+								※フォームからもお申し込みできます。</p>
+							<p class="p-flow__txt">
+								郵便振替：ご依頼主の方へ郵便振替用紙を送付いたします。<br>お近くの郵便局にてお支払いくださいませ。<br>※ご注文後、お電話でご確認させていただきます。<br>商品のお引き渡しは、ご注文確認後3日以内に発送いたします。
+							</p>
+
+						</div>
+
+						<div class="p-flow__block">
+
+							<%- include('../../module/_hd-02-02',{
+              	hd_txt : '返品について'
+            }); %>
+
+							<p class="p-flow__txt">
+								食べる物ですので、申し訳ありませんが返品は受け付けておりません。<br>次の場合に限り、ご返品・お取替をさせていただきます。<br>・不良品<br>・ご注文と異なる商品をお届けした場合（返送料金は当社で負担させていただきます）
+							</p>
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>products-single">単品商品一覧</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>products-detail">各商品ページ</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>flow">ご購入の流れ・注意点</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

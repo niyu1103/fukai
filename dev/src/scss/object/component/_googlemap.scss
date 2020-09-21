@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* ===========================================
+	googlemap
+=========================================== */
+
+.c-googlemap {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 76%;
+	padding-top: 30px;
+	position: relative;
+}
+
+.c-googlemap iframe, .c-googlemap object, .c-googlemap embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}

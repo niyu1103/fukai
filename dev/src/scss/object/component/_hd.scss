@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* ===========================================
+	hd
+=========================================== */
+.c-hd {
+	&__home-hero {
+		color: $color-white;
+		font-weight: bold;
+		@include pc {
+			font-size: 3rem;
+			padding: 75px 0 55px;
+		}
+		text-align: center;
+	}
+
+	&__01 {
+		color: $color-white;
+		font-size: 2.4rem;
+		font-weight: 900;
+		line-height: 1;
+		margin-bottom: 75px;
+		text-align: center;
+
+		&--EN {
+			display: block;
+			font-size: 1.4rem;
+			font-weight: 500;
+			padding-top: 12px;
+		}
+
+		&-02 {
+			font-size: 2.4rem;
+			font-weight: 900;
+			line-height: 1;
+			margin-top: 74px;
+			position: relative;
+
+			&--ja {
+				display: block;
+				margin-bottom: -98px;
+			}
+
+			&--EN {
+				color: $site-color06;
+				display: block;
+				font-size: 10.6rem;
+				font-weight: 400;
+				line-height: 1;
+				margin-left: -105px;
+				position: relative;
+				z-index: -1;
+			}
+
+			&--sub {
+				display: block;
+				font-size: 1.8rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__02 {
+		font-size: 2.4rem;
+		font-weight: 900;
+		line-height: 1;
+		margin-bottom: 25px;
+		position: relative;
+		text-align: center;
+
+		&::after {
+			background-color: $site-color05;
+			bottom: 13px;
+			content: "";
+			display: inline-block;
+			height: 2px;
+			left: 50%;
+			margin-bottom: 12px;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 50px;
+		}
+
+		&.p--re {
+			color: $color-white;
+		}
+
+		&--EN {
+			display: block;
+			font-size: 1.4rem;
+			font-weight: 700;
+			padding-top: 27px;
+		}
+
+		&-02 {
+			font-size: 2.4rem;
+			font-weight: 900;
+			line-height: 1.2;
+			position: relative;
+			text-align: center;
+
+			&::after {
+				background-color: $site-color05;
+				bottom: -27px;
+				content: "";
+				display: inline-block;
+				height: 2px;
+				left: 50%;
+				margin-bottom: 12px;
+				position: absolute;
+				transform: translateX(-50%);
+				width: 50px;
+			}
+		}
+	}
+
+	&__img {
+		padding: 130px 0;
+		width: 100%;
+	}
+
+	&-03 {
+		&--ja {
+			font-weight: 400;
+			margin-top: -20px;
+			position: relative;
+			z-index: 5;
+		}
+
+
+		&--en {
+			color: $site-color06;
+			display: block;
+			font-size: 10.6rem;
+			font-weight: 400;
+			line-height: 1;
+			margin-left: -105px;
+			position: relative;
+			z-index: 3;
+		}
+
+		&--round {
+			background-color: $site-color03;
+			border-radius: 50%;
+			color: $color-white;
+			display: inline-block;
+			font-size: 4rem;
+			font-weight: 400;
+			line-height: 60px;
+			margin-right: 5px;
+			text-align: center;
+			width: 60px;
+			z-index: 5;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* ===========================================
+  flow
+=========================================== */
+.p-flow {
+	&__hero {
+		background: url(../img/flow/mv_flow.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&__map {
+		margin-top: 80px;
+	}
+
+	&__block {
+		margin-top: 150px;
+
+		& .c-hd__02-02 {
+			margin-bottom: 110px;
+		}
+	}
+
+	&__txt {
+		font-size: 1.8rem;
+		margin-top: 25px;
+
+		&--big {
+			font-size: 2.4rem;
+			font-weight: 600;
+		}
+	}
+}

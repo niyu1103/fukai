@@ -1,0 +1,245 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'products-set';
+	page_title = 'products set item | ' + site_title;
+  page_url = site_url + '/products-set/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-products">
+			<section>
+				<div class="p-mainvisual">
+					<div class="p-products__hero">
+						<div class="c-hd__img">
+							<%- include('../../module/_hd-01',{
+							hd_txt : '商品のご紹介',
+							hd_EN_txt : 'products'
+						}); %>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="l-contents">
+					<div class="l-wapper">
+						<%- include('../../module/_hd-02-02',{
+              	hd_txt : 'セット商品一覧'
+            }); %>
+						<div class="p-products__nav">
+							<ul class="p-products__nav-list">
+								<li class="p-products__nav-item"><a class="c-btn" href="#yamaho">ヤマホ醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#tamari">たまり漬け</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="#dashi">だし醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="<%= distPath %>">焼きそば醤油</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="<%= distPath %>">焼肉のたれ</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="<%= distPath %>">甚吉袋</a></li>
+								<li class="p-products__nav-item"><a class="c-btn" href="<%= distPath %>">その他</a></li>
+							</ul>
+						</div>
+
+						<div id="yamaho" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'YAMAHO SHOYU',
+                hd_round_txt : 'ヤ',
+                hd_txt : 'マホ醤油'
+              }); %>
+							<ul class="p-products__list">
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/yamaho.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">醤油・だし・たまり漬け<br>４点セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/yamaho.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">丸大豆3本セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/yamaho.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">醤油・だし・たまり漬け<br>7点セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/yamaho.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">つゆ3本セット</h4>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="tamari" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'TAMARI ZUKE',
+                hd_round_txt : 'た',
+                hd_txt : 'まり漬け'
+              }); %>
+							<ul class="p-products__list">
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">たまり漬け10箱セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">たまり漬け6箱セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>products-detail">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">たまり漬け4箱セット</h4>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="dashi" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'DASHI SHOYU',
+                hd_round_txt : 'だ',
+                hd_txt : 'し醤油'
+              }); %>
+							<ul class="p-products__list">
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">だし・醤油3本セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">だし3本セット<br>
+										</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">醤油・だし5本セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">そうめんセット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">夏季限定5点セット</h4>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="set" class="p-products__block">
+							<%- include('../../module/_hd-03',{
+                hd_EN_txt : 'COMBINATION',
+                hd_round_txt : '組',
+                hd_txt : 'み合わせ'
+              }); %>
+							<ul class="p-products__list">
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">たまり漬け・醤油・だしセット<span
+												class="p-products__tit--sub">大根・きゅうり・なす・たけのこ）</span></h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">ミニ甚吉袋 小瓶2本セット</h4>
+									</a>
+								</li>
+								<li class="p-products__item">
+									<a class="p-products__link" href="<%= distPath %>">
+										<div class="p-products__img-wrap">
+											<img class="p-products__img"
+												src="<%= distPath %>assets/img/products/dashi.jpg" alt="">
+										</div>
+										<h4 class="p-products__tit">日本酒・たまり漬けセット</h4>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>products-set">セット商品一覧</a></li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

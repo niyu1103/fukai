@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* ===========================================
+  information
+=========================================== */
+.p-information {
+	&__hero {
+		background: url(../img/information/mv_infomation.png) no-repeat;
+		background-size: cover;
+	}
+
+	&__block {
+		margin-top: 95px;
+		width: 100%;
+
+		&-s {
+			margin-top: 60px;
+			width: 100%;
+		}
+	}
+
+	&__name {
+		background-color: $site-color04;
+		font-size: 1.8rem;
+		font-weight: 500;
+		line-height: 40px;
+		text-align: center;
+		width: 100%;
+	}
+
+	&__googlemap {
+		width: 51.23%;
+	}
+
+	&__column {
+		@include column();
+		margin-top: 20px;
+	}
+
+	&__info {
+		&-box {
+			width: 43.93%;
+		}
+
+		&-column {
+			@include column();
+
+			&:nth-child(n+2) {
+				margin-top: 8px;
+			}
+		}
+
+		&-tit {
+			line-height: 1;
+		}
+
+		&-contents {
+			margin-left: 20px;
+		}
+
+		&-img {
+			margin-top: 15px;
+		}
+	}
+
+	&__margin {
+		margin-top: 160px;
+	}
+
+	&__online {
+		background: url(../img/information/online.jpg) no-repeat;
+		background-size: cover;
+		color: $color-white;
+		margin-top: 190px;
+		position: relative;
+
+		&--block {
+			padding: 95px 0 40px 250px;
+			position: relative;
+
+			&::before {
+				border: 1px solid #fff;
+				content: "";
+				display: inline-block;
+				height: calc(100% - 28px);
+				left: 14px;
+				position: absolute;
+				top: 14px;
+				width: calc(100% - 28px);
+				z-index: 2;
+			}
+		}
+
+		&--tit {
+			font-size: 3.2rem;
+			font-weight: 500;
+			margin-top: 10px;
+
+			&-sub {
+				font-size: 1.8rem;
+				font-weight: 500;
+			}
+		}
+
+		&--txt {
+			font-weight: 600;
+			margin-top: 10px;
+		}
+
+		&--btn {
+			margin-top: 25px;
+			position: relative;
+			width: 360px;
+			z-index: 10;
+		}
+	}
+}

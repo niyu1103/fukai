@@ -1,0 +1,117 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'story';
+	page_title = 'story | ' + site_title;
+  page_url = site_url + '/story/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-post p-story">
+			<section>
+				<div class="p-mainvisual">
+					<div class="p-story__hero">
+						<div class="c-hd__img">
+							<%- include('../../module/_hd-01',{
+							hd_txt : '所沢と深井醤油',
+							hd_EN_txt : 'Brand story'
+            }); %>
+							<p class="p-story__hero--sub">江戸末期から所沢で醤油を造ってきた深井醤油の6代目が語る、所沢と醤油の深い縁。<br>醤油へのこだわりとソウルを不定期発信。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="l-contents">
+					<div class="l-wapper">
+
+						<div class="p-post__box">
+							<div class="p-post__img-box">
+								<img class="p-post__img" src="<%= distPath %>assets/img/story/brand_01.jpg" alt="">
+							</div>
+							<div class="p-post__txt-box">
+								<h2 class="p-post__tit">第一回　深井醤油と所沢</h2>
+								<p class="p-post__txt">
+									テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入
+								</p>
+								<div class="p-post__btn"><a class="c-btn" href="<%= distPath %>story-details">もっと読む</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="p-post__box">
+							<div class="p-post__img-box">
+								<img class="p-post__img" src="<%= distPath %>assets/img/story/brand_02.jpg" alt="">
+							</div>
+							<div class="p-post__txt-box">
+								<h2 class="p-post__tit">第二回　タイトルタイトルタイトル</h2>
+								<p class="p-post__txt">
+									テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入
+								</p>
+								<div class="p-post__btn"><a class="c-btn" href="<%= distPath %>story-details">もっと読む</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="p-post__box">
+							<div class="p-post__img-box">
+								<img class="p-post__img" src="<%= distPath %>assets/img/story/brand_03.jpg" alt="">
+							</div>
+							<div class="p-post__txt-box">
+								<h2 class="p-post__tit">第三回　タイトルタイトルタイトル</h2>
+								<p class="p-post__txt">
+									テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入
+								</p>
+								<div class="p-post__btn"><a class="c-btn" href="<%= distPath %>story-details">もっと読む</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="p-pagination">
+							<div class="p-pagination__links">
+								<a class="p-pagination__prev p-pagination__num" href="<%= distPath %>">
+									<img class="p-pagination__arrow" src="<%= distPath %>assets/img/news/ico_prev.png"
+										alt="">
+								</a>
+								<span class="p-pagination__num current">1</span>
+								<a class="p-pagination__num" href="<%= distPath %>">2</a>
+								<a class="p-pagination__num" href="<%= distPath %>">3</a>
+								<a class="p-pagination__num" href="<%= distPath %>">4</a>
+								<a class="p-pagination__num" href="<%= distPath %>">5</a>
+								<a class="p-pagination__next p-pagination__num" href="<%= distPath %>">
+									<img class="p-pagination__arrow" src="<%= distPath %>assets/img/news/ico_next.png"
+										alt="">
+								</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>story">所沢と深井醤油</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

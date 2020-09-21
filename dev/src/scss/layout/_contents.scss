@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* ===========================================
+	contents
+=========================================== */
+.l-contents {
+	@include pc {
+		padding: 130px 0 200px;
+	}
+	@include sp {
+		padding: 60px 0 100px;
+	}
+}
+
+.l-contents--s {
+	@include pc {
+		padding: 105px 0 125px;
+	}
+}
+
+.l-wapper {
+	@include pc {
+		margin: 0 auto;
+		width: 890px;
+	}
+	@include sp {
+		padding: 60px 0 100px;
+	}
+}
+
+.l-wapper-s {
+	@include pc {
+		margin: 0 auto;
+		width: 720px;
+	}
+}

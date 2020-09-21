@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* ===========================================
+  about
+=========================================== */
+.p-about {
+	&__hero {
+		background: url(../img/about/mv_about.jpg) no-repeat;
+		background-size: cover;
+		padding: 115px 0 78px;
+
+		&-list {
+			@include column($b: initial);
+		}
+
+		&-item {
+			background-color: rgba(255, 255, 255, .2);
+			color: $color-white;
+			padding: 50px 20px;
+			text-align: center;
+			width: 32.58%;
+		}
+
+		&-tit {
+			font-weight: bold;
+		}
+
+		&-txt {
+			font-size: 1.4rem;
+			line-height: 1.8;
+			margin-top: 50px;
+		}
+	}
+
+	&-seasoning {
+		&__hd {
+			font-size: 1.6rem;
+			text-align: center;
+		}
+
+		&__list {
+			margin-top: 115px;
+		}
+
+		&__item {
+			background-size: contain;
+			height: 525px;
+			position: relative;
+			width: 532px;
+			z-index: 5;
+
+			// &::before {
+			// 	background-color: $site-color02;
+			// 	border-radius: 50%;
+			// 	content: "";
+			// 	display: inline-block;
+			// 	height: 526px;
+			// 	position: absolute;
+			// 	width: 526px;
+			// 	z-index: 1;
+			// }
+
+			&:nth-child(1) {
+				background: url(../img/about/about_01.png) no-repeat;
+				background-size: contain;
+				margin-left: 9.37%;
+			}
+
+			&:nth-child(2) {
+				background: url(../img/about/about_02.png) no-repeat;
+				background-size: contain;
+				margin-left: 51.64%;
+				margin-top: -253px;
+			}
+
+			&:nth-child(3) {
+				background: url(../img/about/about_03.png) no-repeat;
+				background-size: contain;
+				margin-left: 15.23%;
+				margin-top: -160px;
+			}
+		}
+
+		&__num {
+			color: $site-color02;
+			font-size: 13.7rem;
+			left: 80px;
+			position: absolute;
+			top: -71px;
+		}
+
+		&__box {
+			padding-left: 85px;
+			padding-top: 140px;
+		}
+
+		&__tit {
+			color: $color-white;
+			font-size: 2.4rem;
+			font-weight: 500;
+		}
+
+		&__mes {
+			color: $color-white;
+			line-height: 2;
+			padding-top: 40px;
+		}
+
+		& .c-btn__re {
+			margin-top: 35px;
+			width: 246px;
+		}
+	}
+
+	&__history {
+		&-hd {
+			background: url(../img/about/hd_history.jpg) no-repeat;
+			background-size: contain;
+		}
+	}
+}

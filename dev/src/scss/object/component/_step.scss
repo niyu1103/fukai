@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* ===========================================
+	step
+=========================================== */
+
+.c-step {
+	&__block {
+		margin-top: 105px;
+	}
+
+	&__tit {
+		position: relative;
+
+		&::before {
+			background: url(../img/recipe/ico_mark.svg) no-repeat;
+			background-size: contain;
+			bottom: -2px;
+			content: "";
+			display: inline-block;
+			height: 33px;
+			left: -20px;
+			position: absolute;
+			width: 21px;
+		}
+
+		&::after {
+			background: url(../img/recipe/ico_merk_re.svg) no-repeat;
+			background-size: contain;
+			bottom: -2px;
+			content: "";
+			display: inline-block;
+			height: 33px;
+			position: absolute;
+			right: -5px;
+			width: 21px;
+		}
+
+		&-box {
+			font-size: 2.4rem;
+			font-weight: 400;
+			line-height: 32px;
+			position: relative;
+			text-align: center;
+		}
+	}
+
+	&__list {
+		margin-top: 60px;
+	}
+
+	&__item {
+		font-size: 1.8rem;
+		@include column($b: center);
+		padding-left: 20px;
+
+		&:nth-child(n+2) {
+			margin-top: 60px;
+		}
+
+		&:last-of-type {
+			& .c-step__num {
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+
+	&__num {
+		display: block;
+		line-height: 82px;
+		position: relative;
+		text-align: center;
+
+		&::before {
+			background-color: #ebeaea;
+			border-radius: 50%;
+			content: "";
+			display: inline-block;
+			height: 82px;
+			left: 50%;
+			position: absolute;
+			top: auto;
+			transform: translateX(-50%);
+			width: 82px;
+			z-index: -1;
+		}
+
+		&::after {
+			background: url(../img/recipe/ico_arrow_down.svg) no-repeat;
+			background-size: contain;
+			bottom: -45px;
+			content: "";
+			display: inline-block;
+			height: 20px;
+			position: absolute;
+			right: 16px;
+			width: 14px;
+		}
+	}
+
+	&__txt {
+		display: block;
+		margin-left: 35px;
+		width: 87.19%;
+	}
+
+	&__caution {
+		background-color: $site-color04;
+		font-size: 1.8rem;
+		margin-top: 65px;
+		padding: 25px 105px;
+		position: relative;
+		width: 100%;
+
+		&::before {
+			border: 1px solid $site-color02;
+			content: "";
+			display: inline-block;
+			height: calc(100% - 16px);
+			left: 8px;
+			position: absolute;
+			top: 8px;
+			width: calc(100% - 16px);
+			z-index: 2;
+		}
+	}
+}

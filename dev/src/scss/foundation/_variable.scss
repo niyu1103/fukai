@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* ===========================================
+	variable
+=========================================== */
+
+$breakpoint: 768px;
+$sp_content_w: 100%;
+$contents_width: 1280px;
+$site-color01: #333;
+$site-color02: #b7b7b7;
+$site-color03: #25253e;
+$site-color04: #ebeaea;
+$site-color05: #960000;
+$site-color06: #d9d9d9;
+$color-white: #fff;
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin content_w($a: $contents_width, $mt: 0, $mb: 0, $sppd: 20px) {
+	@include pc {
+		margin: $mt auto $mb;
+		width: $a;
+	}
+	@include sp {
+		padding: 0 $sppd;
+		width: 100%;
+	}
+}
+
+@mixin pc($min-width: $breakpoint + 1) {
+	@media print,
+	screen and (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin sp($max-width: $breakpoint) {
+	@media only screen and (max-width: $max-width) {
+		@content;
+	}
+}
+
+@mixin column($a: space-between, $b: flex-start, $c: wrap, $d: row) {
+	align-items: $b;
+	display: flex;
+	flex-direction: $d;
+	flex-wrap: $c;
+	justify-content: $a;
+}

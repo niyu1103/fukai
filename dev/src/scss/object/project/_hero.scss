@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* ===========================================
+  hero
+=========================================== */
+.p-hero {
+	background: url(../img/top/about_cv.jpg) no-repeat;
+	background-size: cover;
+
+	&__btn {
+		padding: 60px 0 80px;
+
+
+		& .c-btn__re {
+			width: 310px;
+
+			&::after {
+				margin-left: 28px;
+			}
+		}
+	}
+}

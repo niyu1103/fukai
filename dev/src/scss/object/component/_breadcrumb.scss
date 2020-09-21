@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* ===========================================
+	breadcrumb
+=========================================== */
+
+.c-breadcrumb {
+	&__block {
+		@include column($a: flex-start);
+		margin-left: 40px;
+	}
+
+	&__list {
+		font-size: 1.4rem;
+		line-height: 50px;
+		position: relative;
+		text-align: center;
+
+
+		&::before {
+			background-color: $site-color04;
+			border-radius: 50%;
+			content: "";
+			display: inline-block;
+			height: 50px;
+			left: 50%;
+			position: absolute;
+			top: 0;
+			transform: translateX(-50%);
+			width: 50px;
+			z-index: -1;
+		}
+
+		&::after {
+			background: url(../img/common/ico-arrow_gray.svg) no-repeat;
+			content: "";
+			display: inline-block;
+			height: 12px;
+			position: absolute;
+			right: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 8px;
+		}
+
+		&:nth-child(n+2) {
+			margin-left: 70px;
+		}
+
+		&:not(.home) {
+			&:last-of-type::after {
+				content: none;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+	}
+}

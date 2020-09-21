@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ===========================================
+	txt
+=========================================== */
+
+.c-txt {
+	&__center {
+		&--white {
+			color: $color-white;
+			@include pc {
+				margin-top: 35px;
+			}
+			text-align: center;
+		}
+	}
+}

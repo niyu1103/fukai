@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.home .p-mainvisual {
+	height: 100vh;
+	position: relative;
+
+	&--top {
+		color: $color-white;
+		font-size: 3.6rem;
+		line-height: 1.75;
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.p-mainvisual {
+	position: relative;
+}

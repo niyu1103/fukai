@@ -1,0 +1,77 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'story–details';
+	page_title = 'story – details | ' + site_title;
+  page_url = site_url + '/story–details/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-post p-post–details p-story">
+
+			<section>
+				<div class="l-contents">
+					<div class="l-wapper">
+
+						<div class="p-post–details__hero">
+							<img class="p-post–details__hero--img"
+								src="<%= distPath %>assets/img/story-detail/brand_01.jpg" alt="">
+						</div>
+						<div class="p-post__info">
+							<span class="p-post__date">2019.12.20</span>
+						</div>
+						<h2 class="p-post__tit">第一回　深井醤油と所沢</h2>
+						<p class="p-post__txt">
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+						</p>
+						<div class="p-pagination">
+							<div class="p-pagination__links">
+								<a class="p-pagination__prev p-pagination__num" href="<%= distPath %>">
+									<img class="p-pagination__arrow" src="<%= distPath %>assets/img/news/ico_prev.png"
+										alt="">
+								</a>
+								<a class="p-pagination__next p-pagination__num" href="<%= distPath %>">
+									<img class="p-pagination__arrow" src="<%= distPath %>assets/img/news/ico_next.png"
+										alt="">
+								</a>
+							</div>
+						</div>
+						<div class="p-post–details__btn"><a class="c-btn" href="<%= distPath %>story">所沢と深井醤油topへ</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>story">所沢と深井醤油</a>
+					</li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>story-details">エピソード各記事</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

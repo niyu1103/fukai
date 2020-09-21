@@ -1,0 +1,161 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'news';
+	page_title = 'news | ' + site_title;
+  page_url = site_url + '/news/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-post">
+			<section>
+				<div class="p-mainvisual">
+					<div class="p-post__hero">
+						<div class="c-hd__img">
+							<%- include('../../module/_hd-01',{
+							hd_txt : '新着情報一覧',
+							hd_EN_txt : 'Whats new'
+						}); %>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="l-contents">
+
+					<div class="p-post__block">
+						<div class="p-post__contents">
+
+							<div class="p-post__box">
+								<div class="p-post__img-box">
+									<img class="p-post__img" src="<%= distPath %>assets/img/news/news01.png" alt="">
+								</div>
+								<div class="p-post__txt-box">
+									<div class="p-post__info"><span class="c-cat">SHOP</span><span
+											class="p-post__date">2019.12.20</span></div>
+									<h2 class="p-post__tit">新店舗オープンしました！</h2>
+									<p class="p-post__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+									<div class="p-post__btn"><a class="c-btn"
+											href="<%= distPath %>news–details">もっと読む</a></div>
+								</div>
+							</div>
+
+							<div class="p-post__box">
+								<div class="p-post__img-box">
+									<img class="p-post__img" src="<%= distPath %>assets/img/news/news02.png" alt="">
+								</div>
+								<div class="p-post__txt-box">
+									<div class="p-post__info"><span class="c-cat">EVENT</span><span
+											class="p-post__date">2019.12.20</span></div>
+									<h2 class="p-post__tit">新店舗オープンしました！</h2>
+									<p class="p-post__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+									<div class="p-post__btn"><a class="c-btn"
+											href="<%= distPath %>news–details">もっと読む</a></div>
+								</div>
+							</div>
+
+							<div class="p-post__box">
+								<div class="p-post__img-box">
+									<img class="p-post__img" src="<%= distPath %>assets/img/news/news03.png" alt="">
+								</div>
+								<div class="p-post__txt-box">
+									<div class="p-post__info"><span class="c-cat">MEDIA</span><span
+											class="p-post__date">2019.12.20</span></div>
+									<h2 class="p-post__tit">新店舗オープンしました！</h2>
+									<p class="p-post__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+									<div class="p-post__btn"><a class="c-btn"
+											href="<%= distPath %>news–details">もっと読む</a></div>
+								</div>
+							</div>
+
+							<div class="p-post__box">
+								<div class="p-post__img-box">
+									<img class="p-post__img" src="<%= distPath %>assets/img/news/news01.png" alt="">
+								</div>
+								<div class="p-post__txt-box">
+									<div class="p-post__info"><span class="c-cat">SHOP</span><span
+											class="p-post__date">2019.12.20</span></div>
+									<h2 class="p-post__tit">新店舗オープンしました！</h2>
+									<p class="p-post__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+									<div class="p-post__btn"><a class="c-btn"
+											href="<%= distPath %>news–details">もっと読む</a></div>
+								</div>
+							</div>
+
+							<div class="p-post__box">
+								<div class="p-post__img-box">
+									<img class="p-post__img" src="<%= distPath %>assets/img/news/news01.png" alt="">
+								</div>
+								<div class="p-post__txt-box">
+									<div class="p-post__info"><span class="c-cat">SHOP</span><span
+											class="p-post__date">2019.12.20</span></div>
+									<h2 class="p-post__tit">新店舗オープンしました！</h2>
+									<p class="p-post__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+									<div class="p-post__btn"><a class="c-btn"
+											href="<%= distPath %>news–details">もっと読む</a></div>
+								</div>
+							</div>
+
+							<div class="p-pagination">
+								<div class="p-pagination__links">
+									<a class="p-pagination__prev p-pagination__num" href="<%= distPath %>">
+										<img class="p-pagination__arrow"
+											src="<%= distPath %>assets/img/news/ico_prev.png" alt="">
+									</a>
+									<span class="p-pagination__num current">1</span>
+									<a class="p-pagination__num" href="<%= distPath %>">2</a>
+									<a class="p-pagination__num" href="<%= distPath %>">3</a>
+									<a class="p-pagination__num" href="<%= distPath %>">4</a>
+									<a class="p-pagination__num" href="<%= distPath %>">5</a>
+									<a class="p-pagination__next p-pagination__num" href="<%= distPath %>">
+										<img class="p-pagination__arrow"
+											src="<%= distPath %>assets/img/news/ico_next.png" alt="">
+									</a>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="p-post__sidebar">
+							<ul class="p-post__cat--list">
+								<li class="p-post__cat--item"><a class="p-post__cat--link"
+										href="<%= distPath %>">カテゴリ項目1</a></li>
+								<li class="p-post__cat--item"><a class="p-post__cat--link"
+										href="<%= distPath %>">カテゴリ項目2</a></li>
+								<li class="p-post__cat--item"><a class="p-post__cat--link"
+										href="<%= distPath %>">カテゴリ項目3</a></li>
+								<li class="p-post__cat--item"><a class="p-post__cat--link"
+										href="<%= distPath %>">カテゴリ項目4</a></li>
+								<li class="p-post__cat--item"><a class="p-post__cat--link"
+										href="<%= distPath %>">カテゴリ項目5</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>news">新着情報一覧</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

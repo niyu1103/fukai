@@ -1,0 +1,171 @@
+<% include ../../common/_variable %>
+<%
+	page_id = 'products-set';
+	page_title = 'products set item | ' + site_title;
+  page_url = site_url + '/products-set/';
+  distPath = '../';
+%>
+
+<!DOCTYPE html>
+<html lang=ja>
+	<% include ../../common/_head %>
+
+	<body class="<%= page_id %>">
+		<% include ../../common/_header %>
+		<main class="p-products p-products-detail">
+
+			<section>
+				<div class="l-wapper">
+					<div class="l-contents">
+						<%- include('../../module/_hd-01-02',{
+                hd_EN_txt : 'TAMARI ZUKE',
+                hd_txt : 'ミックス（大根・きゅうり・なす・ショウガ）',
+                hd_txt_sub : 'キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー'
+              }); %>
+						<div class="p-products-detail__block">
+							<img class="p-products-detail__img" src="<%= distPath %>assets/img/products/tamari.jpg"
+								alt="">
+							<div class="p-products-detail__txt-box">
+								<p class="p-products-detail__txt">
+									説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+								</p>
+								<div class="p-products-detail__info">金額 / 300円　内容量 / 300g　商品番号 / 00000000</div>
+								<div class="p-products-detail__btn-box">
+									<a class="c-btn" href="<%= distPath %>">カートに入れる</a>
+									<a class="c-btn" href="<%= distPath %>flow">ご購入の流れ・注意点</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="p-products-detail__lead--block">
+							<img class="p-products-detail__lead--img"
+								src="<%= distPath %>assets/img/products/hd_p_detail.jpg" alt="">
+							<div class="p-products-detail__lead--txt-box">
+								<p class="p-products-detail__lead--txt">
+									深井醤油のたまり漬けは、すべて国産野菜を使用。<br>歯ざわりの良さと飽きのこない味に仕上げました。</p>
+								<p class="p-products-detail__lead--txt-sub">
+									厳選された野菜を醤油屋自慢の調味液でじっくり漬け込みました。<br>豊富な種類をそろえておりますので、それぞれの素材を活かした食感や味をお楽しみください。
+								</p>
+							</div>
+						</div>
+
+						<div class="l-wapper-s">
+
+							<div class="p-products__block">
+								<%- include('../../module/_hd-02-02',{
+              	hd_txt : '「たまり漬け」の他のシリーズ'
+            }); %>
+								<ul class="p-products__list">
+									<li class="p-products__item">
+										<a class="p-products__link" href="<%= distPath %>products-detail">
+											<div class="p-products__img-wrap">
+												<img class="p-products__img"
+													src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+											</div>
+											<h4 class="p-products__tit">ピリ辛しゃくし菜</h4>
+										</a>
+									</li>
+									<li class="p-products__item">
+										<a class="p-products__link" href="<%= distPath %>">
+											<div class="p-products__img-wrap">
+												<img class="p-products__img"
+													src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+											</div>
+											<h4 class="p-products__tit">らっきょ</h4>
+										</a>
+									</li>
+									<li class="p-products__item">
+										<a class="p-products__link" href="<%= distPath %>">
+											<div class="p-products__img-wrap">
+												<img class="p-products__img"
+													src="<%= distPath %>assets/img/products/tamari.jpg" alt="">
+											</div>
+											<h4 class="p-products__tit">甘口らっきょ</h4>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="p-products__block">
+								<%- include('../../module/_hd-02-02',{
+              	hd_txt : '「たまり漬け」を使用したレシピ'
+            }); %>
+								<ul class="p-card-square__block">
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes01.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">サラダ風醤油漬け</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">ヤマホ醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>recipe–detail">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes02.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">卵焼き</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">5min</span>
+														<span class="c-cat">だし醤油</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									<li class="p-card-square__list">
+										<a class="p-card-square__link" href="<%= distPath %>">
+											<img class="p-card-square__img"
+												src="<%= distPath %>assets/img/top/recipes03.jpg" alt="">
+											<div>
+												<dl>
+													<dt class="p-card-square__tit">たまり漬けスパゲッティ</dt>
+													<dd class="p-card-square__info">
+														<span class="p-card-square__time">15min</span>
+														<span class="c-cat">たまり漬け</span>
+													</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<div class="c-breadcrumb">
+				<ul class="c-breadcrumb__block">
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link" href="<%= distPath %>">HOME</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>products-set">セット商品一覧</a></li>
+					<li class="c-breadcrumb__list"><a class="c-breadcrumb__link"
+							href="<%= distPath %>products-detail">各商品ページ</a></li>
+				</ul>
+
+			</div>
+
+
+
+		</main>
+
+		<% include ../../common/_footer %>
+		<% include ../../common/_js %>
+	</body>
+
+</html>

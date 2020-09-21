@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* ===========================================
+	header
+=========================================== */
+.l-header {
+	&__inner {
+		background: $site-color01;
+		@include column();
+		padding: 10px 0;
+	}
+}

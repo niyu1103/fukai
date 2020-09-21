@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* ===========================================
+  products
+=========================================== */
+.p-products {
+	&__hero {
+		background: url(../img/products/mv_products.png) no-repeat;
+		background-size: cover;
+	}
+
+
+	&__nav {
+		margin-top: 105px;
+
+		&-list {
+			@include column();
+
+			&::after {
+				content: "";
+				display: block;
+				width: 22.47%;
+			}
+		}
+
+		&-item {
+			font-size: 1.4rem;
+			font-weight: 600;
+			width: 22.47%;
+
+			&:nth-child(n+5) {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&__block {
+		margin-top: 125px;
+	}
+
+	&__list {
+		@include column($a: flex-start);
+		margin-left: -30px;
+		margin-top: 30px;
+	}
+
+	&__item {
+		margin-left: 30px;
+		width: 21.73%;
+
+		&:nth-child(n+5) {
+			margin-top: 25px;
+		}
+	}
+
+	&__img-wrap {
+		box-shadow: none;
+		overflow: hidden;
+		transition: .3s;
+		width: 100%;
+
+		&:hover {
+			box-shadow: 4px 4px #25253e;
+		}
+	}
+
+	&__img {
+		transition: .3s;
+
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: .3s;
+		}
+	}
+
+	&__tit {
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.26;
+		margin-top: 10px;
+		text-align: center;
+
+		&--sub {
+			display: block;
+			font-size: 1.1rem;
+		}
+	}
+
+	&-detail {
+		&__block {
+			@include column();
+			margin-top: 35px;
+		}
+
+		&__img {
+			width: 39.32%;
+		}
+
+		&__txt {
+			line-height: 2;
+
+			&-box {
+				width: 54.49%;
+			}
+		}
+
+		&__info {
+			background-color: $site-color04;
+			font-size: 1.4rem;
+			line-height: 30px;
+			margin-top: 15px;
+			padding: 0 15px;
+		}
+
+		&__btn-box {
+			@include column();
+			margin-top: 20px;
+
+			& .c-btn {
+				margin: 0;
+				width: 46.59%;
+			}
+		}
+
+		&__lead {
+			&--block {
+				margin-top: 150px;
+				position: relative;
+				width: 100%;
+			}
+
+			&--txt {
+				font-size: 2.1rem;
+				font-weight: 500;
+
+				&-box {
+					background-color: rgba(255, 255, 255, .17);
+					color: $color-white;
+					left: 50%;
+					padding: 40px 0 30px;
+					position: absolute;
+					text-align: center;
+					top: 45px;
+					transform: translateX(-50%);
+					width: 89.43%;
+				}
+
+				&-sub {
+					font-size: 1.5rem;
+					margin-top: 25px;
+				}
+			}
+		}
+
+		& .p-products__list {
+			@include column();
+			margin-top: 65px;
+		}
+
+		& .p-card-square__block {
+			margin-top: 65px;
+		}
+
+		& .p-products__item {
+			width: 26.96%;
+		}
+	}
+}
